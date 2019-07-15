@@ -1,0 +1,25 @@
+function car_heading_estimate
+close all
+load('gps_data.mat');
+N1=200;
+N=360;
+t=data(N1+1:N1+N,1); % time 
+xtrue=data(N1+1:N1+N,2);
+ytrue=data(N1+1:N1+N,3);
+ztrue=data(N1+1:N1+N,4);
+xsensor=randn(N,1);
+ysensor=
+zsensor=
+%N=size(t,1);
+
+%% states xfilter=[x,y,vx,vy]
+% Filter Initialization
+
+     for i=2:N
+         dt(i-1)=t(i)-t(i-1);% compute time diff between two nodes
+         %dt=0.1;
+         %% prediction
+        
+         %% Update
+         
+  
